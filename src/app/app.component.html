@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Theme Demo</h2>
+
+  <select (change)="toggleTheme($event)">
+    <option
+      *ngFor="let theme of themes"
+      [value]="theme.value">
+        {{ theme.label }}
+    </option>
+  </select>
+</div>
